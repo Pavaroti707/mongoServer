@@ -3,7 +3,7 @@ import Course from '../models/course.model'
 
 const create = (req, res) => {
     const course = Course(req.body);
-    student.save((err, data) => {
+    course.save((err, data) => {
         if(err){
             return res.status(400).json(err.message);
         }
